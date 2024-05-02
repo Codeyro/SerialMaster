@@ -1,0 +1,379 @@
+QComboBox {
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 4px;
+    padding-left: 7px;
+	color: rgb(255, 255, 255);
+}
+
+QComboBox:on {
+    border: 2px solid rgb(157, 159, 164);
+	padding-left: 6px;
+}
+
+QComboBox::down-arrow:disabled {
+	image: url();
+}
+
+QComboBox:disabled {
+    border: none;
+	padding-left: 8px;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(images/dropArrow.svg);
+	width: 10px;
+	margin-right: 7px;
+}
+
+QComboBox::down-arrow:on {
+	image: url(images/dropArrow2.svg);
+	width: 10px;
+	margin-right: 7px;
+}
+
+QComboBox QAbstractItemView {
+	border: none;
+    selection-background-color:#c2dbfe;
+	height: 20px;
+	outline: 0px;
+	text-size: 12px;
+	color: rgb(255, 255, 255);
+}
+
+
+QGroupBox {
+	border: 1px solid rgb(57, 59, 64);
+	border-radius: 4px;
+	margin-top: 2ex;
+}
+
+QGroupBox::title {
+	color: rgb(255, 255, 255);
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding-top: -5px;
+}
+
+
+QHBoxLayout {
+	background-color: rgb(60, 63, 65);
+}
+
+
+QToolTip {
+	color: white;
+	background-color: rgb(60, 63, 65);
+	border: 1px solid  white;
+}
+
+
+QCheckBox {
+	color: rgb(255, 255, 255);
+}
+
+QCheckBox:indicator:unchecked {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: -2px;
+	padding-right: 6px;
+	image: url(images/checkbox_off_dark.svg);
+	width: 15px;
+	border: 1px solid rgb(99, 99, 99);
+	border-radius: 4px;	
+}
+
+QCheckBox:indicator:checked {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 6px;
+	padding-right: -2px;
+	image: url(images/checkbox_on_dark.svg);
+	width: 15px;
+	border: 1px solid rgb(99, 99, 99);
+	border-radius: 4px;	
+}
+
+
+QLineEdit {
+	border: 1px solid rgb(99, 99, 99);
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	color: rgb(255, 255, 255);
+	padding: 1px;
+	padding-left: 3px;
+}
+
+QLineEdit:focus {
+	background-color: rgb(62, 62, 67);
+}
+
+
+QPlainTextEdit {
+	border: 1px solid rgb(99, 99, 99);
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+	padding: 2 2px;
+}
+
+
+QScrollBar::vertical {
+	max-width: 8px;
+	min-width: 8px;
+}
+
+QScrollBar::handle:vertical {
+	background-color: rgba(255, 255, 255, 55);
+	min-height: 16px;
+	border: none;
+	border-radius: 4px;
+}
+
+QScrollBar::add-page::vertical, QScrollBar::sub-page::vertical {
+	background: none;
+}
+
+
+QScrollBar::up-arrow::vertical, QScrollBar:right-arrow::vertical {
+	background: none;
+	outline: none;
+}
+
+
+QLabel {
+	color: rgb(255, 255, 255);
+	background: none;
+}
+
+
+QWidget {
+	background-color: rgb(48, 50, 53);
+}
+
+
+QPushButton#connectButton {
+	background-color: #0a2;
+	border: none;
+	border-radius: 4px;
+	color: rgb(255, 255, 255);
+}
+
+QPushButton#connectButton:checked {
+	background-color: #b03;
+	border: none;
+	border-radius: 4px;
+}
+
+QPushButton#connectButton:disabled {
+	background-color: #455;
+	border: none;
+	border-radius: 4px;
+	color: rgb(200, 200, 200);
+}
+
+QPushButton#sendButton {
+	border-right: 1px solid rgb(99, 99, 99);
+	border-top: 1px solid rgb(99, 99, 99);
+	border-bottom: 1px solid rgb(99, 99, 99);
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: rgb(255, 255, 255);
+	image: url(send_light.png);
+	padding: 5px;
+}
+
+QPushButton#sendButton:hover {
+	background-color: rgb(99, 99, 99);
+}
+
+
+QWidget#widget, #widget_2, #widget_3 {
+	background-color: rgb(65, 67, 73);
+}
+
+
+QPushButton#menuButton, #menuButton_2, #menuButton_3 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	padding: 2px;
+	image: url(images/logo_light.svg);
+}
+
+QPushButton#aboutButton {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/about_light.png);
+}
+
+QPushButton#aboutButton_2 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/about_light.png);
+}
+
+QPushButton#closeButton {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/closeWindow_light.png);
+}
+
+QPushButton#closeButton_2 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/closeWindow_light.png);
+}
+
+QPushButton#closeButton_3 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/closeWindow_light.png);
+}
+
+QPushButton#minimizedButton {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/minimizedWindow_light.png);
+}
+
+QPushButton#minimizedButton_2 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/minimizedWindow_light.png);
+}
+
+QPushButton#minimizedButton_3 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/minimizedWindow_light.png);
+}
+
+QPushButton#settingsButton {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/settings_light.png);
+}
+
+QPushButton#settingsButton_2 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/settings_light.png);
+}
+
+QPushButton#homeButton {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/home_light.png);
+}
+
+QPushButton#homeButton_2 {
+	background: none;
+	border: none;
+	border-radius: 6px;
+	image: url(images/home_light.png);
+}
+
+QPushButton#aboutButton::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#aboutButton_2::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#settingsButton::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#settingsButton_2::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#minimizedButton::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#minimizedButton_2::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#minimizedButton_3::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#homeButton::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#closeButton::hover {
+	background-color: rgb(255, 0, 0);
+}
+
+QPushButton#closeButton_2::hover {
+	background-color: rgb(255, 0, 0);
+}
+
+QPushButton#closeButton_3::hover {
+	background-color: rgb(255, 0, 0);
+}
+
+
+QPushButton#clearButton::hover, #copyButton::hover, #saveButton::hover, #newButton::hover {
+	background-color: rgba(255, 255, 255, 50);
+}
+
+QPushButton#clearButton {
+	background: none;
+	border: 0px;
+	border-radius: 4px;
+	image: url(images/clear_light.png);
+}
+
+QPushButton#copyButton {
+	background: none;
+	border: 0px;
+	border-radius: 4px;
+	image: url(images/copy_light.png);
+}
+
+QPushButton#saveButton {
+	background: none;
+	border: 0px;
+	border-radius: 4px;
+	image: url(images/save_light.png);
+}
+
+QPushButton#newButton {
+	background: none;
+	border: 0px;
+	border-radius: 4px;
+	image: url(images/newWindow_light.png);
+}
+
+
+QLabel {
+	color: rgb(255, 255, 255);
+	background: none;
+}
+
+QLabel#label {
+	image: url(images/logo.svg);
+}
+
+QLabel#label_4, #label_5, #label_7, #label_8{
+	color: rgb(180, 180, 180);
+}
