@@ -72,7 +72,6 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.output = None
         self.dragPos = None
         self.setupUi(self)  # Это нужно для инициализации нашего дизайна
-        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)  # Окно без рамки
 
         self.comboBox.currentTextChanged.connect(changePort)
         self.comboBox_2.currentTextChanged.connect(changeSpeed)
