@@ -1,11 +1,3 @@
-# ---------------------------------------------------------------
-# Приложение с графическим интерфейсом "Serial master"
-# Предназначено для работы с последовательными портами компьютера
-# Автор: Codey.ro
-# Версия 1.0
-# Copyright © 2023
-# ---------------------------------------------------------------
-
 # Импортируем библиотеки
 import sys
 import tkinter.filedialog as fd
@@ -87,7 +79,7 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.comboBox_3.currentTextChanged.connect(changeDB)
         self.comboBox_4.currentTextChanged.connect(changeParity)
         self.comboBox_5.currentTextChanged.connect(changeSB)
-        self.connectButton.clicked.connect(self.connecttoPort)
+        self.connectButton.clicked.connect(self.connectToPort)
         self.clearButton.clicked.connect(self.clearOutput)
         self.copyButton.clicked.connect(self.copyOutput)
         self.saveButton.clicked.connect(self.saveOutput)
@@ -129,7 +121,7 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
             self.comboBox.addItems('Портов не найдено')
             self.connectButton.setDisabled(True)
 
-    def connecttoPort(self, checked):
+    def connectToPort(self, checked):
         global portActive
         global ser
         if checked == 1:
