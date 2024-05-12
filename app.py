@@ -6,7 +6,7 @@ import serial.tools.list_ports
 from PyQt6 import QtWidgets, QtCore
 from PyQt6.QtCore import QObject, QThread, pyqtSignal
 import design
-import design_output
+
 
 # Задаём переменные
 portList = None
@@ -57,11 +57,6 @@ def changeSB(s):
     SBActive = s
 
 
-def outputShow():
-    output = QtWidgets.QWidget
-    output.exec()
-
-
 # Создаём классы
 class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def __init__(self):  # Это нужно для доступа к переменным, методам и т.д. в файле design.py
@@ -91,7 +86,6 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.settingsButton.clicked.connect(self.settings)
         self.settingsButton_2.clicked.connect(self.settings)
         self.stackedWidget.setCurrentIndex(0)
-        self.newButton.clicked.connect(outputShow)
         self.settingsButton.hide()
         self.settingsButton_2.hide()
         self.newButton.hide()
@@ -186,23 +180,6 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
     def settings(self):
         self.stackedWidget.setCurrentIndex(2)
-
-    def mousePressEvent(self, event):
-        self.dragPos = event.globalPosition().toPoint()
-
-    def mouseMoveEvent(self, event):
-        self.move(self.pos() + event.globalPosition().toPoint() - self.dragPos)
-        self.dragPos = event.globalPosition().toPoint()
-        event.accept()
-
-
-class OutputWindow(QtWidgets.QWidget, design_output.Ui_MainWindow):
-    def __init__(self):
-        super().__init__()
-        self.output = None
-        self.dragPos = None
-        self.setupUi(self)  # Это нужно для инициализации нашего дизайна
-        self.setWindowFlags(QtCore.Qt.WindowType.FramelessWindowHint)  # окно без рамки
 
     def mousePressEvent(self, event):
         self.dragPos = event.globalPosition().toPoint()

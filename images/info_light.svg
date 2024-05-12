@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10mm"
+   height="10mm"
+   viewBox="0 0 10 10"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="info_light.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="10.818518"
+     inkscape:cx="22.41527"
+     inkscape:cy="28.146184"
+     inkscape:window-width="1680"
+     inkscape:window-height="997"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:15;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 5.0002116 0 A 5 5 0 0 0 0 5.0002116 A 5 5 0 0 0 5.0002116 9.9999064 A 5 5 0 0 0 9.9999064 5.0002116 A 5 5 0 0 0 5.0002116 0 z M 5.0002116 1.9998779 A 0.39845049 0.39845049 0 0 1 5.3986369 2.3983032 A 0.39845049 0.39845049 0 0 1 5.0002116 2.7967285 A 0.39845049 0.39845049 0 0 1 4.6017863 2.3983032 A 0.39845049 0.39845049 0 0 1 5.0002116 1.9998779 z M 5.0002116 3.4463013 C 5.2209529 3.4463013 5.3986369 3.6239852 5.3986369 3.8447266 L 5.3986369 7.6016032 C 5.3986369 7.8223445 5.2209529 8.0000285 5.0002116 8.0000285 C 4.7794702 8.0000285 4.6017863 7.8223445 4.6017863 7.6016032 L 4.6017863 3.8447266 C 4.6017863 3.6239852 4.7794702 3.4463013 5.0002116 3.4463013 z " />
+  </g>
+</svg>
