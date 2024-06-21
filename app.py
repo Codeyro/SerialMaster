@@ -7,7 +7,6 @@ from PyQt6 import QtWidgets, QtCore
 from PyQt6.QtCore import QObject, QThread, pyqtSignal
 import design
 
-
 # Задаём переменные
 portList = None
 ports = None
@@ -77,18 +76,18 @@ class MainWindow(QtWidgets.QMainWindow, design.Ui_MainWindow):
         self.clearButton.clicked.connect(self.clearOutput)
         self.copyButton.clicked.connect(self.copyOutput)
         self.saveButton.clicked.connect(self.saveOutput)
-        self.helpButton.pressed.connect(self.updatePorts)
+        #self.helpButton.pressed.connect(self.updatePorts)
         self.sendButton.clicked.connect(self.sendData)
-        self.homeButton.clicked.connect(self.home)
+        #self.homeButton.clicked.connect(self.home)
         self.homeButton_2.clicked.connect(self.home)
         self.aboutButton.clicked.connect(self.about)
         self.aboutButton_2.clicked.connect(self.about)
-        self.settingsButton.clicked.connect(self.settings)
-        self.settingsButton_2.clicked.connect(self.settings)
+        #self.settingsButton.clicked.connect(self.settings)
+        #self.settingsButton_2.clicked.connect(self.settings)
         self.stackedWidget.setCurrentIndex(0)
-        self.settingsButton.hide()
-        self.settingsButton_2.hide()
-        self.newButton.hide()
+        #self.settingsButton.hide()
+        #self.settingsButton_2.hide()
+        #self.newButton.hide()
         self.sendButton.setDisabled(True)
         self.updatePorts()
 
